@@ -1,17 +1,17 @@
-const myMenu = ["hamburguesa","pizza","empanada","papasfritas","gaseosa","agua","jugo"]
-console.log (myMenu)
+const contenedorTarjetas = document.getElementById("productos-container");
 
-function ordenarComida () {
-    do{
-        let pedirComida = prompt ("Ingrese su orden")
-        if(myMenu.includes(pedirComida) === true){
-            console.log ("Tu comida es:" + pedirComida)
-        }
-        else{
-            console.log ("No tenemos lo que pedis:" + pedirComida)
-        }
-    }while(confirm("Desea pedir algo mas?"))
-    alert ("Gracias por su pedido")
+/** Crea las tarjetas de productos teniendo en cuenta la lista en bicicletas.js */
+function crearTarjetasProductosInicio(productos){
+  productos.forEach(producto => {
+    const nuevaCamiseta = document.createElement("div");
+    nuevaCamiseta.classList = "tarjeta-producto"
+    nuevaCamiseta.innerHTML = `
+    <img src="./img/productos/${producto.id}.png" alt="Remeras 1">
+    <h3>${producto.nombre}</h3>
+    <p class="precio">$${producto.precio}</p>
+    <button>Agregar al carrito</button>`
+    contenedorTarjetas.appendChild(nuevaCamiseta);
+    nuevaCamiseta.getElementsByTagName("button")[0].addEventListener("click",() => agregarAlCarrito(producto))
+  });
 }
-
-ordenarComida ()
+crearTarjetasProductosInicio(camisetas);

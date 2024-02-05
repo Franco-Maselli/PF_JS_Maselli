@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PreEntrega1</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Entregable2</title>
 </head>
 <body>
-    
-
-<!-- En el trabajo se presenta un simulador de pedido de comida con un menu incluído y la opción de realizar 
-uno o mas pedidos.
-En el mismo se utilizan interacciones con el usuario (prompt,alert),variables (const y let), 
-condicionales, ciclo "do while", funciones y arrays.-->
-
-    <script src="./js/main.js"></script>
+	<header>
+		<nav>
+			<a href="./index.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+			<div>
+				<a href="./cart.html" id="cart"><img src="./img/carrito.png" alt="carrito"><span id="cuenta-carrito">0</span></a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="productos-container">
+		</section>
+	</main>
+	<footer>
+		<p>Todos los derechos reservados</p>
+	</footer>
+    <script src="./js/camisetas.js"></script>
+	<script src="./js/cartService.js" defer></script>
+	<script src="./js/main.js" defer></script>
 </body>
 </html>
