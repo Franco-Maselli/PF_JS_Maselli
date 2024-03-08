@@ -72,5 +72,4 @@ function reiniciarCarrito(){
   actualizarNumeroCarrito();
 }
 
-
 actualizarNumeroCarrito();

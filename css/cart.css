@@ -1,6 +1,7 @@
 #cart-container{
   max-width: 500px;
   margin: auto;
+  margin-top: 40px;
 }
 
 .tarjeta-producto{
@@ -17,13 +18,15 @@
   width: 130px;
 }
 .tarjeta-producto div{
-  background-color: var(--color-acento-claro);
+  background-color: var(--color-claro);
   padding: 3px;
   border-radius: 5px;
 }
 
 #totales{
   text-align: center;
+  margin-top: 20px;
+  margin-right: 60px;
 }
 
 #carrito-vacio{

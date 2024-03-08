@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/style.css">
  	<link rel="stylesheet" href="./css/cart.css">
-	<title>Entregable2 - Carrito</title>
+	<title>PF_JS_Maselli - Carrito</title>
 </head>
 <body>
   <header>
 		<nav>
-			<a href="./index.html"><img src="./img/logo.png" alt="Logo" id="logo"></a>
+			<a href="./index.html"><img src="./assets/logo.png" alt="Logo" id="logo"></a>
 			<div>
-				<a href="./cart.html" id="cart"><img src="./img/carrito.png" alt="carrito"><span id="cuenta-carrito">0</span></a>
+				<a href="./cart.html" id="cart"><img src="./assets/carrito.png" alt="carrito"><span id="cuenta-carrito">0</span></a>
 			</div>
 		</nav>
 	</header>
@@ -24,16 +24,18 @@
   <section id="totales">
     <p>Total unidades: <span id="cantidad">0</span></p>
     <p>Total precio: $<span id="precio">0</span></p>
-    <button disabled>Comprar</button>
-    <button id="reiniciar">Reiniciar</button>
+    <button class="button-carrito" id="comprar">Comprar</button>
+    <button class="button-carrito" id="reiniciar">Reiniciar</button>
   </section>
 </main>
 	<footer>
 		<p>Todos los derechos reservados</p>
 	</footer>
 
-	<script src="./js/bicicletas.js"></script>
+	<script src="./js/camisetas.js"></script>
   	<script src="./js/cartService.js" defer></script>
 	<script src="./js/cart.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./js/sweetAlert.js"></script>
 </body>
 </html>

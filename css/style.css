@@ -1,8 +1,7 @@
-
 :root{
-  --color-acento: #256cb3;
-  --color-acento-claro: #d9e0f3;
-  --color-texto: black;
+  --color-azul: #256cb3;
+  --color-claro: #d9e0f3;
+  --color-texto: #000;
 }
 
 body{
@@ -35,10 +34,10 @@ button{
 }
 
 a:hover:not(#cart), button:hover{
-  color: var(--color-acento);
+  color: var(--color-azul);
 }
 
-/* Inicio estilos Header */
+/* estilos header */
 header{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.09);
   margin-bottom: 10px;
@@ -52,8 +51,8 @@ header nav{
 }
 
 #logo{
-  height: 75px;
-  margin: 10px;
+  height: 150px;
+  margin: 5px;
 }
 
 header nav div{
@@ -63,24 +62,18 @@ header nav div{
 }
 
 header nav img{
-  height: 25px;
+  height: 30px;
 }
 
 #cuenta-carrito{
   position: absolute;
-  background-color: var(--color-acento);
+  background-color: var(--color-azul);
   border-radius: 100%;
   display: inline-block;
   height: 25px;
   line-height: 25px;
   aspect-ratio: 1;
   text-align: center;
-}
-
-main{
-  width: 1440px;
-  margin: auto;
-  padding: 40px 0 40px 0;
 }
 
 footer{
@@ -100,13 +93,11 @@ footer a{
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-
+  margin: 20px 0px 50px 0px;
 }
 
-  /*
-*/
 .tarjeta-producto{
-  background-color: var(--color-acento-claro);
+  background-color: var(--color-claro);
   text-align: center;
   padding: 10px;
   max-width: 400px;
@@ -130,9 +121,19 @@ footer a{
 
 .tarjeta-producto button{
   font-size: larger;
-  background-color: var(--color-acento);
+  background-color: var(--color-azul);
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 5px 10px;
+  color: white;
+  border:unset;
+  cursor:pointer;
+}
+
+.button-carrito{
+  font-size: larger;
+  background-color: var(--color-azul);
+  border-radius: 5px;
+  padding: 5px 10px;
   color: white;
   border:unset;
   cursor:pointer;

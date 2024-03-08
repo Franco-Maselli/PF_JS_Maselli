@@ -13,7 +13,7 @@ function crearTarjetasProductosCarrito() {
       const nuevaCamiseta = document.createElement("div");
       nuevaCamiseta.classList = "tarjeta-producto";
       nuevaCamiseta.innerHTML = `
-    <img src="./img/productos/${producto.id}.png" alt="Bicicleta 1">
+    <img src="./assets/productos/${producto.id}.png" alt="Remera 1">
     <h3>${producto.nombre}</h3>
     <span>$${producto.precio}</span>
     <div>
